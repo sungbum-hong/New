@@ -1,0 +1,11 @@
+/* span css */
+@import url("./test-span.css");
+/* p css */
+p {
+  background-color: red;
+  color: white;
+}
+h3 {
+  background-color: black;
+  color: white;
+}
