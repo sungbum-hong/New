@@ -1,0 +1,6 @@
+.orange + li {
+  color: red;
+}
+.orange + a {
+  color: blue;
+}

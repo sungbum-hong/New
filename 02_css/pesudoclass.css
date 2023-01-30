@@ -1,0 +1,11 @@
+a:hover {
+  color: skyblue;
+}
+
+a:active {
+  background-color: purple;
+}
+
+input:focus {
+  background-color: darkred;
+}
