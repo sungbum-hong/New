@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: #fc0;
+        border-radius: 50%;
+        position: relative;
+        top: 100px;
+        left: 50px;
+      }
+
+      .box0_1 {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .box0_1_1 {
+        width: 25px;
+        height: 25px;
+        background-color: purple;
+        position: absolute;
+        top: 10px;
+        left: 1px;
+      }
+      /* 가상 요소  */
+      /* div > .box0_1_1 {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+      } */
+      .box {
+        position: relative;
+      }
+      .box1 {
+        top: 40px;
+        left: 110px;
+      }
+      .box2 {
+        top: -30px;
+        left: 170px;
+        background-color: darkorange;
+      }
+      .box3 {
+        top: -130px;
+        left: 230px;
+        background-color: #c0c;
+      }
+      .box4 {
+        top: -230px;
+        left: 290px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box0">
+      <div class="box0_1">
+        <div class="box0_1_1"></div>
+      </div>
+    </div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+  </body>
+</html>
