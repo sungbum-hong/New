@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        margin-bottom: 20px;
+        margin: auto;
+      }
+
+      .parent {
+        width: 100px;
+        position: relative;
+        background-color: skyblue;
+        transition: 2s;
+        perspective: 500px;
+      }
+
+      .child1:hover {
+        transform: rotate(405deg);
+        transition-duration: 2s;
+      }
+      .child2:hover {
+        position: absolute;
+        background-color: orange;
+        transform: rotateX(405deg);
+        transition-duration: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child1"></div>
+    </div>
+    <div class="parent">
+      <div class="child2"></div>
+    </div>
+  </body>
+</html>
