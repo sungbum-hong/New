@@ -1,3 +1,8 @@
+/* Google Font 
+font-family: 'Indie Flower', cursive;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
 /* COMMON */
 body {
 }
@@ -43,6 +48,7 @@ header .inner .header__menu {
   margin-left: 20px;
 }
 header .inner .header__menu li {
+  font-family: "Noto Sans KR", sans-serif;
   padding: 8px 16px;
 }
 header .inner .header__menu li a {
