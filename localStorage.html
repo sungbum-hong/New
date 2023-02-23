@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.localStorage.setItem("name", "홍성범");
+      console.log(window.localStorage.getItem("name"));
+
+      window.localStorage.setItem("number", 1);
+      const number = window.localStorage.getItem("number");
+      console.log(number);
+      console.log(typeof number);
+
+      const sb = {
+        name: "홍성범",
+        isOld: true,
+        hobby: ["음주", "게임", "스터디", "자전거"],
+      };
+
+      const jsonSb = JSON.stringify(sb);
+      window.localStorage.setItem("sb", jsonSb);
+
+      const jsonSbFromLocal = window.localStorage.getItem("sb");
+      const objSb = JSON.parse(jsonSbFromLocal);
+      console.log(objSb);
+
+      console.log(window.localStorage);
+
+      // 부분삭제
+      window.localStorage.setItem("pororo", "뽀로로입니다!");
+      console.log(window.localStorage.getItem("pororo"));
+      window.localStorage.removeItem("pororo");
+      console.log(window.localStorage.getItem("pororo"));
+
+      // 전체삭제
+      window.localStorage.clear();
+      console.log(localStorage);
+
+      window.localStorage.setItem("sb", "접니다");
+      window.localStorage.setItem("pororo", "뽀로로");
+      console.log(window.localStorage.length);
+      console.log(window.localStorage.key(0));
+      console.log(window.localStorage.key(1));
+      console.log(window.localStorage.key(2));
+
+      window.localStorage.clear();
+      // window.localStorage.setItem("pororo", "뽀로로");
+      // window.sessionStorage.setItem("sb", "홍성범");
+
+      window.localStorage.setItem("a", "에이");
+      window.localStorage.setItem("b", "비");
+      window.localStorage.setItem("c", "씨");
+      window.localStorage.setItem("d", "디");
+      window.localStorage.setItem("e", "이");
+
+      for (let i = 0; i < window.localStorage.length; i++) {
+        const key = window.localStorage.key(i);
+        const value = window.localStorage.getItem(key);
+        console.log(`key 는 ${key}, 안의 값은 ${value}`);
+      }
+
+      // const jsonSb = JSON.stringify(sb);
+      // console.log(jsonSb);
+
+      // const objSb = JSON.parse(jsonSb);
+      // console.log(objSb);
+    </script>
+  </head>
+  <body></body>
+</html>
